@@ -10,10 +10,11 @@
 
 ## 📖Overview
 
-In this paper, we propose **StructGen**, a novel framework for function-level code generation that incorporates UML-structure to enhance code generation. StructGen comprises two main phases: the designing phase and the coding phase. 
+we propose a novel framework for function-level code generation, named **StructGen**, which employs the Unified Modeling Language (UML) activity diagrams as structure to model design schemes to guide code generation.
 
-- **Designing Phase:** The Designer, powered by a Large Language Model (LLM), generates a design scheme in the form of a UML activity diagram based on the textual requirements.
-- **Coding Phase:** The Coder, also driven by an LLM, generates code based on the design scheme and the corresponding requirements. Public test cases validate the generated code, and iterations of code repair or design revision are undertaken if necessary.
+- **Designing Phase:** An LLM serves as the Designer, inferring the requirements and modeling the design schemes using UML activity diagrams. For each requirement, the Designer employs a UML activity diagram to logically organize the implementation process through sequential, selective, and iterative structures.
+- **Coding Phase:** Another LLM operates as the Coder, generating code guided by the design schemes. 
+
 
 ![StructGen Framework](StructGen/assets/structgen_overview.jpg)
 
@@ -72,7 +73,7 @@ If you find the code helpful, please cite our paper:
 
 ```bibtex
 @inproceedings{2024structgen,
-  title     = {StructGen: A Novel Framework for Function-Level Code Generation Using UML-Structure},
+  title     = {StructGen: A Novel Framework for Function-Level Code Generation with LLMs via UML Activity Diagrams},
   author    = {},
   booktitle = {The [Conference Name] 2025},
   year      = {2025}
@@ -81,4 +82,4 @@ If you find the code helpful, please cite our paper:
 
 ---
 
-This README provides an overview of StructGen, including setup instructions for the environment and dataset, a quick start guide, and citation information. StructGen leverages UML activity diagrams to enhance function-level code generation by incorporating a designing phase and a coding phase, aiming to improve code quality and accuracy through structured design representation.
+This README provides an overview of StructGen, including setup instructions for the environment and dataset, a quick start guide, and citation information. 
