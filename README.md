@@ -10,7 +10,7 @@
 
 ## 📖Overview
 
-we propose a novel framework for function-level code generation, named **StructGen**, which employs the Unified Modeling Language (UML) activity diagrams as structure to model design schemes to guide code generation.
+We propose a novel framework for function-level code generation, named **StructGen**, which employs the Unified Modeling Language (UML) activity diagrams as structure to model design schemes to guide code generation.
 
 - **Designing Phase:** An LLM serves as the Designer, inferring the requirements and modeling the design schemes using UML activity diagrams. For each requirement, the Designer employs a UML activity diagram to logically organize the implementation process through sequential, selective, and iterative structures.
 - **Coding Phase:** Another LLM operates as the Coder, generating code guided by the design schemes. 
